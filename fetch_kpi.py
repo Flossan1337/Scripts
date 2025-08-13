@@ -31,7 +31,7 @@ def fetch_stats():
 
 if __name__ == "__main__":
     stats = fetch_stats()
-    conv   = stats.get("Konverteringar", 0)
+    conv   = stats.get("Konverteringar:", 0)
     brands = stats.get("Varumärken",    0)
 
     # 1) Print to console
